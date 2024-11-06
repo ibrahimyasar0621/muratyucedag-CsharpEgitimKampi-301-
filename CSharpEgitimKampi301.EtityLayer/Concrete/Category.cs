@@ -36,7 +36,7 @@ namespace CSharpEgitimKampi301.EtityLayer.Concrete
 
         public bool CategoryStatus { get; set; }
 
-
+        public List<Product> Products { get; set; }
 
     }
 }

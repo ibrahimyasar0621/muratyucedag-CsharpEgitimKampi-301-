@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.EtityLayer.Concrete
 {
-    internal class Customer
+    public class Customer
     {
         // Programlamada solidler var.
         // SOLİD 
@@ -22,8 +22,8 @@ namespace CSharpEgitimKampi301.EtityLayer.Concrete
         public string CustomerDistrict { get; set; }     // müşterinin işlçe bilgisi 
         public string CustomerCity{ get; set; }     // müşterinin şehir bilgisi. 
 
+        public List<Order> Orders  { get; set; }
 
 
-        
     }
 }

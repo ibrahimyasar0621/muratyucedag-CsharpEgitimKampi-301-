@@ -13,7 +13,8 @@ namespace CSharpEgitimKampi301.EtityLayer.Concrete
         public int ProductStock { get; set; }   // Stoğum olsun kaç adet olduğunu göreyim
         public decimal ProductPrice { get; set; }   // Productun bir pricesi satış fiyatıolsun. decimal yaptık cünkü ondalıklı türde fiyatımız olursa diye.
         public string ProductDescription { get; set; }   // Productun bir açıklaması olsun.
-
-
+        public int CategoryId { get; set; }             // Her bir ürünün bir kategorisi olmalı 
+        public virtual Category Category { get; set; }  // Ktegori tablosuun değerlerine ürün üzerinden ulaşmak için 
+        public List<Order> Orders { get; set; }
     }
 }
