@@ -24,6 +24,6 @@ namespace CSharpEgitimKampi301.EtityLayer.Concrete
 
         public List<Order> Orders  { get; set; }
 
-
+        public bool CustomerStatus { get; set; }
     }
 }
