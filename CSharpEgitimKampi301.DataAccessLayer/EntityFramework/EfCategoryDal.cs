@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.EntityFramework
 {
-    public class EfCategoryDal:GenericRepository<Category>,ICategoryDal    // genericrepository den miras alıyor Category için. Aynı zamanda Icategory daldan miras al.
+    public class EfCategoryDal : GenericRepository<Category>, ICategoryDal   // genericrepository den miras alıyor Category için. Aynı zamanda Icategory daldan miras al.
     {
+        void ICategoryDal.Delete(Product entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
