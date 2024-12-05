@@ -38,8 +38,8 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
         public void Insert(T entity)
         {
             var addedEntity = context.Entry(entity); // Burada eklenecek entity yi hafızaya çektik.
-            addedEntity.State = EntityState.Modified;  // Ekleme işlemini gerçekleştirdi.
-            context.SaveChanges();  // değişikllikleri kayıt ettik. 
+            addedEntity.State = EntityState.Added;  // Ekleme işlemini gerçekleştirdi.
+            context.SaveChanges(); // değişikllikleri kayıt ettik. 
         }
 
         public void Update(T entity)
